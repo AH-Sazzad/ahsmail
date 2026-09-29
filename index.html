@@ -1,11 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AHS MAIL</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AHS Mail gives you a private temporary email address in seconds." />
+    <title>AHS Mail — Temporary Email, Instantly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/milligram.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="AHS Mail home">
+          <span class="brand-mark">@</span>
+          <span>AHS<span class="brand-accent">mail</span></span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#how-it-works">How it works</a>
+          <a href="#why-ahs">Why AHS Mail</a>
+          <a class="button button-outline nav-button" href="#mailbox">Get a temp mail</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="live-dot"></span> Private inboxes, on demand</p>
+            <h1>Keep your real inbox <em>for yourself.</em></h1>
+            <p class="hero-text">Create a secure, disposable email address in one click. No sign-up, no spam, no strings attached.</p>
+          </div>
+
+          <div class="mail-card" id="mailbox">
+            <div class="mail-card-top">
+              <div>
+                <p class="card-label">Your temporary email address</p>
+                <p class="expires" id="inbox-status">Ready to create an inbox</p>
+              </div>
+              <span class="secure-pill" id="inbox-state">Private</span>
+            </div>
+            <div class="address-box">
+              <span class="address" id="email-address">Your temporary address will appear here</span>
+              <button class="copy-button" id="copy-address" type="button" aria-label="Copy email address" disabled>Copy</button>
+            </div>
+            <div class="mail-actions">
+              <button class="button create-button" id="create-inbox" type="button">Create inbox <span>→</span></button>
+              <button class="refresh-link" id="refresh-inbox" type="button" disabled>↻ Refresh inbox</button>
+            </div>
+          </div>
+
+          <p class="trust-line">No registration required <span>•</span> Automatically deleted <span>•</span> Always free</p>
+
+          <section class="inbox-panel is-hidden" id="inbox-panel" aria-live="polite">
+            <aside class="message-list-wrap">
+              <div class="inbox-title-row">
+                <div>
+                  <p class="card-label">Inbox</p>
+                  <p class="message-count" id="message-count">0 messages</p>
+                </div>
+                <span class="polling-indicator">Live</span>
+              </div>
+              <div class="message-list" id="message-list">
+                <p class="empty-state">Your inbox is empty. New messages will appear here automatically.</p>
+              </div>
+            </aside>
+            <article class="message-reader" id="message-reader">
+              <div class="reader-empty">
+                <span>✉</span>
+                <h3>Select a message</h3>
+                <p>Choose an email from your inbox to read it here.</p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section class="benefits" id="why-ahs">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Built for a quieter inbox</p>
+            <h2>Simple by design. Private by default.</h2>
+          </div>
+          <div class="row benefit-grid">
+            <article class="column benefit">
+              <span class="benefit-icon">⌁</span>
+              <h3>Block the noise</h3>
+              <p>Use a throwaway address for downloads, trials, and sign-ups that do not deserve your real email.</p>
+            </article>
+            <article class="column benefit">
+              <span class="benefit-icon">◈</span>
+              <h3>Stay anonymous</h3>
+              <p>There is no account to create and no personal information to hand over. Just a fresh inbox.</p>
+            </article>
+            <article class="column benefit">
+              <span class="benefit-icon">↯</span>
+              <h3>Ready instantly</h3>
+              <p>Your address is generated the moment you need it, with incoming messages visible right away.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <div class="container how-wrap">
+          <div>
+            <p class="eyebrow">Three effortless steps</p>
+            <h2>An inbox when you need it. Gone when you don’t.</h2>
+          </div>
+          <ol class="steps">
+            <li><span>01</span> Copy your generated address.</li>
+            <li><span>02</span> Use it wherever an email is needed.</li>
+            <li><span>03</span> Read your mail, then leave the spam behind.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <a class="brand" href="#top"><span class="brand-mark">@</span><span>AHS<span class="brand-accent">mail</span></span></a>
+        <p>Temporary email for a more private web.</p>
+        <p>© 2026 AHS Mail</p>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
 </html>
